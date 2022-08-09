@@ -17,9 +17,8 @@ class MainActivity : AppCompatActivity() {
 
     fun init() {
         binding.btnLogin.setOnClickListener {
-            Intent(this, MainActivity2::class.java).also {
-                startActivity(it)
-            }
+            val intent = Intent(this, MainActivity2::class.java)
+            startActivity(intent)
         }
     }
 }
